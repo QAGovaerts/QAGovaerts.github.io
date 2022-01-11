@@ -4,8 +4,29 @@
   <meta charset="utf-8">
   <title>Textual Calculator</title>
   <link href="style.css" rel="stylesheet" />
+  <script src="/Brython/brython.js"></script>
+  <script src="/Brython/brython_stdlib.js"></script>
 </head>
-<body>
+<body onload="brython()">
 <h1>Textual Calculator</h1>
+<br>
+This is a calculator that will calculate a mathematical expression entered in the input box below.
+You can use:
+<ul>
+  <li>Any decimal number (with a point '.' as decimal symbol)</li>
+  <li>'+' '-' '*' '/' '**' '%' as plus, min, multiply, devide, power and modulus</li>
+  <li>Round brackets '(' and ')' to specify order of operations</li>
+  <li>Functions in the <a href="https://docs.python.org/3/library/math.html" target="_blank">math module</a> in Python</li>
+</ul>
+
+<script type="text/python" id="python_script">
+  from browser import document, console
+  from textual_calculator import show_result
+
+  document["calulate_button"].bind("click", show_result)
+</script>
+<input id="input_field" autocomplete="off" value="">
+<button id="calulate_button">Calculate</button>
+<div id="output_place" class="zone"></div>
 </body>
 </html>

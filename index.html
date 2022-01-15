@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title>QAGovaerts's projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!-- Source: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_blog&stacked=h -->
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+
+<!-- Go back up button function -->
+<script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+<body class="w3-light-grey">
+
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><b>MY PROJECTS</b></h1>
+            <p>On this website I, <span class="w3-tag">QAGovaerts</span> share some of my projects for you to discover.</p>
+        </header>
+
+        <!-- Grid -->
+        <div class="w3-row">
+
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12">
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+                    <div class="w3-container">
+                        <h3><b>Textual calculator</b></h3>
+                        <h5>Calculate an expression with just typing it in one field</h5>
+                    </div>
+
+                    <div class="w3-container">
+                        <p>With this calculator you can calculate any mathematical expression with just typing it in one field. It uses Python's math module to do the calculations. You can't solve equations, it's just for getting a numeric result for a complex
+                            expression.
+                            <br>This project is rather small but I need it for an upcoming project.</p>
+                        <div class="w3-row">
+                            <div class="w3-col m8 s12">
+                                <p><button class="w3-button w3-padding-large w3-white w3-border"><a href="/textual_calculator/" style="text-decoration:none"><b>TRY IT »</b></a></button></p>
+                            </div>
+                            <div class="w3-col m4 w3-hide-small">
+                                <p><span class="w3-padding-large w3-right"><a href="https://github.com/QAGovaerts/QAGovaerts.github.io/tree/main/textual_calculator" target="_blank" style="text-decoration:none"><b>GitHub </b><img src="/images/GitHub-Mark-32px.png" style="width:25%"></a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+                    <div class="w3-container">
+                        <h3><b>This website</b></h3>
+                        <h5>The very site you're looking at</span>
+                        </h5>
+                    </div>
+
+                    <div class="w3-container">
+                        <p>This website is also a project worth mentioning. It's hosted with GitHub Pages and the lay-out is based on a W3Schools template.</p>
+                        <div class="w3-row">
+                            <div class="w3-col m8 s12">
+                                <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="topFunction()"><b>BACK TO TOP</b></button></p>
+                            </div>
+                            <div class="w3-col m4 w3-hide-small">
+                                <p><span class="w3-padding-large w3-right"><a href="https://github.com/QAGovaerts/QAGovaerts.github.io" target="_blank" style="text-decoration:none"><b>GitHub </b>><img src="/images/GitHub-Mark-32px.png" style="width:25%"></a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END BLOG ENTRIES -->
+            </div>
+
+            <!-- Introduction menu -->
+            <div class="w3-col l4">
+                <!-- Posts -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>Overview</h4>
+                    </div>
+                    <ul class="w3-ul w3-hoverable w3-white">
+                        <li class="w3-padding-16">
+                            <a href="https://github.com/QAGovaerts/QAGovaerts.github.io/tree/main/textual_calculator" target="_blank" style="text-decoration:none">
+                                <span class="w3-large">Textual calculator</span><br>
+                                <span>Calculate an expression with just typing it in one field</span>
+                            </a>
+                        </li>
+                        <li class="w3-padding-16">
+                            <a href="https://github.com/QAGovaerts/QAGovaerts.github.io" target="_blank" style="text-decoration:none">
+                                <span class="w3-large">This website</span><br>
+                                <span>he very site you're looking at</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- About Card -->
+                <div class="w3-card w3-margin w3-margin-top">
+                    <img src="/images/profile.svg" style="width:100%">
+                    <div class="w3-container w3-white">
+                        <h4><b>QAGovaerts</b></h4>
+                        <p>This is supposed to go about me but I still need to come up with a text.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- END Introduction Menu -->
+            </div>
+
+            <!-- END GRID -->
+        </div><br>
+
+        <!-- END w3-content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+        <!-- <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button> -->
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and <a href="https://pages.github.com" target="_blank">GitHub Pages</a></p>
+    </footer>
+
+</body>
+
+</html>

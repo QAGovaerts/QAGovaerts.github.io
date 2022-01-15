@@ -7,6 +7,9 @@ SPECIAL_CONSTANTS = {'pi', 'e', 'tau'}
 def validate_input(string):
     # Remove all whitespaces
     string = re.sub(r'\s', '', string)
+    # Some special constants are ok
+    for constant in SPECIAL_CONSTANTS:
+        string = re.sub(r'(\W)('+constant+')(\W)', r'\1'+r'\3', ' ' + string)[1:]
     # All numbers are ok
     string = re.sub(r'(\.\d+)|(-*\d+)', '', string)
     # Basic operators + - * / % and an ',' are ok
@@ -17,9 +20,6 @@ def validate_input(string):
         if hasattr(math, function):
             string = re.sub(r'('+function+')(\()', r'\2', string)
             used_functions.add(function)
-    # Some special constants are ok
-    for constant in SPECIAL_CONSTANTS:
-        string = re.sub(r'('+constant+')', r'', string)
     # Now there should only be an equal amount of open and closed brackets left
     open_brackets = string.count('(')
     closed_brackets = string.count(')')

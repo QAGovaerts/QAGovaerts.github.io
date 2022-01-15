@@ -130,3 +130,8 @@ dmypy.json
 
 # Other
 .DS_Store
+
+# Specific files
+Brython/demo.html
+Brython/index.html
+Brython/README.txt

@@ -1090,8 +1090,8 @@ a {
 }
 
 .w3-codespan {
-    color: crimson;
-    background-color: #f1f1f1;
+    color: #3600da;
+    background-color: #ededed;
     padding-left: 4px;
     padding-right: 4px;
     font-size: 110%

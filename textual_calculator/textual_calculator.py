@@ -47,7 +47,7 @@ def show_result(event):
     output = validate_input(input_string)
     if isinstance(output, set):
         try:
-            output = "Result: " + str(eval(handle_special_functions(input_string, output)))
+            output = str(eval(handle_special_functions(input_string, output)))
         except Exception as e:
             output = "ERROR: " + str(e)
     document["output_place"].clear()

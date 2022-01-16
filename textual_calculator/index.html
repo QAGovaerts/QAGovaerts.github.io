@@ -1,32 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Textual Calculator</title>
-  <link href="style.css" rel="stylesheet" />
-  <script src="/Brython/brython.js"></script>
-  <script src="/Brython/brython_stdlib.js"></script>
-</head>
-<body onload="brython()">
-<h1>Textual Calculator</h1>
-<br>
-This is a calculator that will calculate a mathematical expression entered in the input box below.
-You can use:
-<ul>
-  <li>Any decimal number (with a point '.' as decimal symbol)</li>
-  <li>'+' '-' '*' '/' '**' '%' as plus, min, multiply, devide, power and modulus</li>
-  <li>Round brackets '(' and ')' to specify order of operations</li>
-  <li>Functions in the <a href="https://docs.python.org/3/library/math.html" target="_blank">math module</a> in Python</li>
-</ul>
+<html>
+<title>Textual Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/style.css">
+<script src="/Brython/brython.js"></script>
+<script src="/Brython/brython_stdlib.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!-- Source: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_blog&stacked=h -->
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
 
-<script type="text/python" id="python_script">
-  from browser import document, console
-  from textual_calculator import show_result
+<body class="w3-light-grey" onload="brython()">
 
-  document["calulate_button"].bind("click", show_result)
-</script>
-<input id="input_field" autocomplete="off" value="">
-<button id="calulate_button">Calculate</button>
-<div id="output_place" class="zone"></div>
+    <!-- include Python script -->
+    <script type="text/python" id="python_script">
+        from browser import document, console
+        from textual_calculator import show_result
+        
+        document["calulate_button"].bind("click", show_result)
+    </script>
+
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><b>TEXTUAL CALCULATOR</b></h1>
+            <p>This is a calculator that will calculate a mathematical expression entered in the input box below.</p>
+        </header>
+
+        <!-- Grid -->
+        <div class="w3-row">
+
+            <!-- Blog entries -->
+            <div class="w3-col l12 s12">
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+
+                    <div class="w3-container">
+                        <p>This is a calculator that will calculate a mathematical expression entered in the input box below. You can use:
+                            <ul>
+                                <li>Any decimal number (with a point <span class="w3-codespan">.</span> as decimal symbol)</li>
+                                <li><span class="w3-codespan">+</span> <span class="w3-codespan">-</span> <span class="w3-codespan">*</span> <span class="w3-codespan">/</span> <span class="w3-codespan">**</span> <span class="w3-codespan">%</span> as plus,
+                                    min, multiply, devide, power and modulus</li>
+                                <li>Round brackets <span class="w3-codespan">(</span> and <span class="w3-codespan">)</span> to specify order of operations</li>
+                                <li>Functions in the <a href="https://docs.python.org/3/library/math.html" target="_blank">math module</a> in Python</li>
+                            </ul>
+                        </p>
+
+                        <br>
+                        <input id="input_field" autocomplete="off" value="">
+                        <button id="calulate_button" class="w3-button w3-padding-large w3-white w3-border">Calculate</button>
+                        <br><br>
+                        <div>Result: <span id="output_place" class="zone, w3-codespan">0</span></div>
+                        <br>
+                    </div>
+                </div>
+                <hr>
+                <!-- END BLOG ENTRIES -->
+            </div>
+
+        </div>
+
+        <!-- END GRID -->
+    </div><br>
+
+    <!-- END w3-content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+        <!-- <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button> -->
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and <a href="https://pages.github.com" target="_blank">GitHub Pages</a></p>
+    </footer>
+
 </body>
+
 </html>

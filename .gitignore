@@ -18,5 +18,8 @@ package-lock.json
 .idea
 .vscode
 
+# MacOS
+.DS_Store
+
 # Misc
 assets/js/dist

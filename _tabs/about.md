@@ -4,6 +4,7 @@ icon: fa-solid fa-user
 order: 4
 ---
 
+![Profile picture](/assets/img/profile/profileQA_rounded.svg){: width="200" height="200" .w-80 .right}
 Hello, I'm Quinten Alexander Govaerts, a 22-year-old student doing a Master's degree in ICT Security and Networks at KU Leuven in Belgium. Welcome to my website!
 
 I've had a fascination with technology and electronics since I was a young boy. For me, it all started with Scratch and LEGO Mindstorms. This led me to explore building projects with Arduino and Raspberry Pi. More recently, the world of software, computer networks and security have expanded my interests. I'm particularly fascinated by the complex layers that make up the internet and like to keep up to date with the latest developments in privacy and security.

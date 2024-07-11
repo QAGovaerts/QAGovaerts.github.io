@@ -23,7 +23,7 @@ There are a lot of selfhosted notification services out there but Ntfy looked re
 
 ## Installing Ntfy
 
-Installing Ntfy was very easy with the Docker container they provide and they have excellent [documentation](https://docs.ntfy.sh/install/#docker). Since I had already a [Docker system with Portainer](/postsinstalling_docker), I used Portainer to launch the container. But before I could start the container, I needed a configuration file. 
+Installing Ntfy was very easy with the Docker container they provide and they have excellent [documentation](https://docs.ntfy.sh/install/#docker). Since I had already a [Docker system with Portainer](/posts/installing_docker), I used Portainer to launch the container. But before I could start the container, I needed a configuration file. 
 
 
 ### The configuration file

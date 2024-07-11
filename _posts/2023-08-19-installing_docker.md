@@ -403,6 +403,9 @@ These labels are for the websecure (HTTPS) router. I can off course change them 
 `traefik.http.services.MY-SERVICE.loadbalancer.server.scheme=https`
 : By default Traefik connects to services over HTTP, this is to tell Traefik to use HTTPS instead of HTTP for this service.
 
+`traefik.docker.network=proxy`
+: Explicitly tell Traefik which Docker network to use if there are multiple Docker networks connected to the container. 
+
 
 ### Network
 

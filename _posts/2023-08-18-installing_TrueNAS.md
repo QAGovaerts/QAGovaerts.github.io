@@ -75,7 +75,7 @@ Next I gave TrueNAS a static IP to use and checked for updates. Everything was a
 
 ## The pool
 
-For the pool I selected the four HDDs as Data VDevs and put them in a RAIDZ1 configuration. This gives me 12 TB of capacity and one parity drives, so I could lose one drive without losing any data. I put the SSD in de Cache VDevs and created the pool.
+For the pool I selected the four HDDs as Data VDevs and put them in a RAIDZ1 configuration. This gives me 12 TB of capacity and one parity drives, so I could lose one drive without losing any data. I put the SSD in the Cache VDevs and created the pool.
 
 
 ## Making a backup
@@ -85,7 +85,7 @@ When everything was set up and working, I wanted to make a backup of my TrueNAS 
 
 ## Changing my setup
 
-As I said earlier, I wanted to change my setup. I wanted to pass through the SATA controller instead of the individual HDDs. I had also bought a smaller SSD because I wanted to use de 500 GB one for another purpose. So I decided to switch the SSDs and change the way the HDDs are pass through.
+As I said earlier, I wanted to change my setup. I wanted to pass through the SATA controller instead of the individual HDDs. I had also bought a smaller SSD because I wanted to use the 500 GB one for another purpose. So I decided to switch the SSDs and change the way the HDDs are pass through.
 
 
 ### Switching the SSD
@@ -99,7 +99,7 @@ Just to be sure I downloaded the config file in TrueNAS before starting to chang
 
 After shutting down the TrueNAS VM I removed the SSD from the connected hardware in the Proxmox UI.
 
-I repeated the process I used to connect the current SSD to connect the new SSD to the TrueNAS VM. When the SSD was correctly configured in the config file, I excluded the SSD from backups in de Proxmox UI and started the VM again.
+I repeated the process I used to connect the current SSD to connect the new SSD to the TrueNAS VM. When the SSD was correctly configured in the config file, I excluded the SSD from backups in the Proxmox UI and started the VM again.
 
 The last thing was to add the new SSD as cache drive to the pool in TrueNAS and the SSD swap was finished.
 

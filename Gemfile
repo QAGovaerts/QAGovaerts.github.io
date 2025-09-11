@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+ruby File.read(".ruby-version").strip
+
 gem "jekyll-theme-chirpy", "~> 7.0"
 
 group :test do

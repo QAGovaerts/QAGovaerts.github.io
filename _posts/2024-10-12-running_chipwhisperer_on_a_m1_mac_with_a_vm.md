@@ -5,7 +5,7 @@ categories: [student]
 tags: [student, macos, vm, security, hardware] # TAG names should always be lowercase
 ---
 
-[ChipWhisperer](https://www.newae.com/chipwhisperer) is some really nice ecosystem to learn and experiment with hardware side-channel and fault injection attacks on all kinds of embedded chips. I'm using the [ChipWhisperer-Nano](https://www.newae.com/products/nae-cw1101) to get familiar with power side-channel attacks.
+[ChipWhisperer](https://www.newae.com/chipwhisperer) is some really nice ecosystem to learn and experiment with hardware side-channel and fault injection attacks on all kinds of embedded chips. I'm using the [ChipWhisperer-Nano](https://www.newae.com/product-page/chipwhisperer-nano) to get familiar with power side-channel attacks.
 
 ChipWhisperer provides a bunch of tutorials in the form of Jupyter Notebooks to run all kinds of side-channel attacks and fault injection attacks. Their [documentation](https://chipwhisperer.readthedocs.io/en/latest/) describes how to install this software and get up and running with the ChipWhisperer hardware. Unfortunately getting this software to fully work on my M1 Mac was not so straight forward for me. After trying both the [native installation process](https://chipwhisperer.readthedocs.io/en/latest/mac-install.html) and the [VirtualBox image](https://chipwhisperer.readthedocs.io/en/latest/virtual-box-inst.html) and both not working (the VM crashed immediately). I decided to build my own virtual machine to run the ChipWhisperer software in. This post describes the build process for this VM.
 

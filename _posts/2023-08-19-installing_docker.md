@@ -337,7 +337,7 @@ After launching some more containers with the correctly configured labels, I was
 - [Put Wildcard Certificates and SSL on EVERYTHING - Traefik Tutorial](https://www.youtube.com/watch?v=liV3c9m_OX8&t=512s) by Techno Tim
 - [Official Traefik documentation](https://doc.traefik.io/traefik/)
 - [Lego docs about Cloudflare API](https://go-acme.github.io/lego/dns/cloudflare/)
-- [Traefik boilerplates](https://github.com/ChristianLempa/boilerplates/tree/main/docker-compose/traefik) by Christian Lempa
+- [Traefik boilerplates](https://github.com/ChristianLempa/boilerplates/tree/main/library/compose/traefik) by Christian Lempa
 - [Cloudflare API docs](https://developers.cloudflare.com/fundamentals/api/)
 - And a lot of forum posts
 

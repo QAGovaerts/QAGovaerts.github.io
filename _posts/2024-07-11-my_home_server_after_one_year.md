@@ -50,7 +50,7 @@ The solid Docker installation with Portainer and Traefik makes it really easy to
 [Grafana](https://grafana.com/)
 : Grafana is the dashboard to see all the statistics of your server. I set it up together with Loki, InfluxDB and Prometheus, but I'm still experimenting with it and learning to query the data.
 
-[Homepage](https://gethomepage.dev/main/)
+[Homepage](https://gethomepage.dev)
 : I use homepage as my main dashboard to easily access all the services that I have running. I really like the looks of it, and it is very easy to add new services via the YAML files.
 
 [Huginn](https://github.com/huginn/huginn)
